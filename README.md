@@ -5,7 +5,9 @@
 
 ## Frontend Programs
 
-### Website wireframe sketch (Still working on it)
+### Website wireframe (main dashboard)
+
+<img src="website-wireframe.svg" alt="website wireframe"/>
 
 ## Backend Programs
 
@@ -29,11 +31,15 @@
 ML Model used: [K-Nearest-Neighbors](https://www.datacamp.com/tutorial/k-nearest-neighbor-classification-scikit-learn) with [Cosine Similarity](https://memgraph.com/blog/cosine-similarity-python-scikit-learn)
 
 - Use Case: For datasets with structured features (e.g., genre, artist, year for music recommendation), which is a YES!
-- How it Works: Finds the k most similar items to a given item based on feature similarity
-- Pros & Cons: Efficient to implement but computationally expensive
+- How it Works: Finds the k most similar items based on **a given title and/OR user preferences**
 
 4. Load data into the engine
 5. Feed the Model with cosine similarity of the Transformed Dataframe
+6. Recommendation Generation:
+
+- **For a given title**: retrieves the most similar ones from the dataset.
+- **For user preferences**: builds a preference vector, compares it to dataset, and recommends the closest matches.
+- applies **filtering** such as min_year, genre, min_imdb to narrow results
 
 ## Next Steps
 

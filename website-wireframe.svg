@@ -1,0 +1,168 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1200">
+  <!-- Background -->
+  <rect width="1000" height="1200" fill="#f5f5f5"/>
+  
+  <!-- Header -->
+  <rect x="0" y="0" width="1000" height="80" fill="#333333"/>
+  <text x="50" y="50" font-family="Arial" font-size="24" fill="white">Hidden Gems Recommender</text>
+  
+  <!-- Navigation -->
+  <rect x="600" y="25" width="100" height="30" rx="5" fill="#555555"/>
+  <text x="650" y="45" font-family="Arial" font-size="14" fill="white" text-anchor="middle">Home</text>
+  
+  <rect x="720" y="25" width="100" height="30" rx="5" fill="#555555"/>
+  <text x="770" y="45" font-family="Arial" font-size="14" fill="white" text-anchor="middle">About</text>
+  
+  <rect x="840" y="25" width="100" height="30" rx="5" fill="#555555"/>
+  <text x="890" y="45" font-family="Arial" font-size="14" fill="white" text-anchor="middle">Contact</text>
+  
+  <!-- Hero Section -->
+  <rect x="50" y="120" width="900" height="200" rx="10" fill="#2c3e50"/>
+  <text x="500" y="180" font-family="Arial" font-size="32" fill="white" text-anchor="middle">Discover Your Next Favorite Show</text>
+  <text x="500" y="220" font-family="Arial" font-size="18" fill="#cccccc" text-anchor="middle">Find similar shows and hidden gems across Netflix, Amazon Prime, and Apple TV+</text>
+  <rect x="400" y="250" width="200" height="40" rx="20" fill="#e74c3c"/>
+  <text x="500" y="275" font-family="Arial" font-size="16" fill="white" text-anchor="middle">Start Exploring</text>
+  
+  <!-- Main Content -->
+  <rect x="50" y="360" width="900" height="800" fill="white" stroke="#dddddd" stroke-width="2"/>
+  
+  <!-- Search and Filter Section -->
+  <rect x="50" y="360" width="900" height="60" fill="#3498db"/>
+  <text x="100" y="400" font-family="Arial" font-size="20" fill="white">Find Similar Shows</text>
+  
+  <!-- Search Title Input -->
+  <rect x="50" y="420" width="900" height="180" fill="#f9f9f9" stroke="#eeeeee" stroke-width="2"/>
+  <text x="100" y="450" font-family="Arial" font-size="16" fill="#333333" font-weight="bold">Search for a show or movie:</text>
+  <rect x="100" y="470" width="600" height="40" rx="5" fill="white" stroke="#cccccc" stroke-width="2"/>
+  <text x="120" y="495" font-family="Arial" font-size="14" fill="#999999">e.g., Stranger Things, The Boys, Ted Lasso...</text>
+  
+  <rect x="720" y="470" width="180" height="40" rx="5" fill="#3498db"/>
+  <text x="810" y="495" font-family="Arial" font-size="16" fill="white" text-anchor="middle">Search</text>
+  
+  <!-- Filter Options -->
+  <text x="100" y="540" font-family="Arial" font-size="16" fill="#333333" font-weight="bold">Refine your results:</text>
+  
+  <!-- Filter Pills -->
+  <rect x="100" y="555" width="100" height="30" rx="15" fill="#3498db"/>
+  <text x="150" y="575" font-family="Arial" font-size="14" fill="white" text-anchor="middle">Netflix</text>
+  
+  <rect x="210" y="555" width="100" height="30" rx="15" fill="#ecf0f1"/>
+  <text x="260" y="575" font-family="Arial" font-size="14" fill="#333333" text-anchor="middle">Prime</text>
+  
+  <rect x="320" y="555" width="100" height="30" rx="15" fill="#ecf0f1"/>
+  <text x="370" y="575" font-family="Arial" font-size="14" fill="#333333" text-anchor="middle">Apple TV+</text>
+  
+  <rect x="430" y="555" width="100" height="30" rx="15" fill="#3498db"/>
+  <text x="480" y="575" font-family="Arial" font-size="14" fill="white" text-anchor="middle">Movies</text>
+  
+  <rect x="540" y="555" width="100" height="30" rx="15" fill="#ecf0f1"/>
+  <text x="590" y="575" font-family="Arial" font-size="14" fill="#333333" text-anchor="middle">Shows</text>
+  
+  <!-- Advanced Filters Button -->
+  <rect x="650" y="555" width="250" height="30" rx="15" fill="#e74c3c"/>
+  <text x="775" y="575" font-family="Arial" font-size="14" fill="white" text-anchor="middle">Show Advanced Filters</text>
+  
+  <!-- Results Section Header -->
+  <rect x="50" y="600" width="900" height="60" fill="#f9f9f9" stroke="#eeeeee" stroke-width="2"/>
+  <text x="100" y="640" font-family="Arial" font-size="20" fill="#333333">Recommendations</text>
+  
+  <!-- Advanced Filter Panel (expanded state) -->
+  <rect x="50" y="660" width="900" height="200" fill="#f5f5f5" stroke="#dddddd" stroke-width="2"/>
+  
+  <!-- Left Column -->
+  <text x="100" y="690" font-family="Arial" font-size="16" fill="#333333" font-weight="bold">Genres</text>
+  
+  <rect x="100" y="705" width="100" height="30" rx="15" fill="#3498db"/>
+  <text x="150" y="725" font-family="Arial" font-size="14" fill="white" text-anchor="middle">Action</text>
+  
+  <rect x="210" y="705" width="100" height="30" rx="15" fill="#ecf0f1"/>
+  <text x="260" y="725" font-family="Arial" font-size="14" fill="#333333" text-anchor="middle">Comedy</text>
+  
+  <rect x="320" y="705" width="100" height="30" rx="15" fill="#3498db"/>
+  <text x="370" y="725" font-family="Arial" font-size="14" fill="white" text-anchor="middle">Drama</text>
+  
+  <rect x="100" y="745" width="100" height="30" rx="15" fill="#ecf0f1"/>
+  <text x="150" y="765" font-family="Arial" font-size="14" fill="#333333" text-anchor="middle">Thriller</text>
+  
+  <rect x="210" y="745" width="100" height="30" rx="15" fill="#ecf0f1"/>
+  <text x="260" y="765" font-family="Arial" font-size="14" fill="#333333" text-anchor="middle">Horror</text>
+  
+  <rect x="320" y="745" width="100" height="30" rx="15" fill="#ecf0f1"/>
+  <text x="370" y="765" font-family="Arial" font-size="14" fill="#333333" text-anchor="middle">More...</text>
+  
+  <!-- Right Column -->
+  <text x="500" y="690" font-family="Arial" font-size="16" fill="#333333" font-weight="bold">Countries</text>
+  
+  <rect x="500" y="705" width="100" height="30" rx="15" fill="#3498db"/>
+  <text x="550" y="725" font-family="Arial" font-size="14" fill="white" text-anchor="middle">US</text>
+  
+  <rect x="610" y="705" width="100" height="30" rx="15" fill="#ecf0f1"/>
+  <text x="660" y="725" font-family="Arial" font-size="14" fill="#333333" text-anchor="middle">UK</text>
+  
+  <rect x="720" y="705" width="100" height="30" rx="15" fill="#ecf0f1"/>
+  <text x="770" y="725" font-family="Arial" font-size="14" fill="#333333" text-anchor="middle">More...</text>
+  
+  <!-- Sliders -->
+  <text x="500" y="765" font-family="Arial" font-size="16" fill="#333333" font-weight="bold">Release Year: 2010-2025</text>
+  <line x1="500" y1="785" x2="800" y2="785" stroke="#cccccc" stroke-width="2"/>
+  <circle cx="580" cy="785" r="8" fill="#3498db"/>
+  <circle cx="720" cy="785" r="8" fill="#3498db"/>
+  
+  <!-- IMDB Score -->
+  <text x="100" y="805" font-family="Arial" font-size="16" fill="#333333" font-weight="bold">Min. IMDB Score: 7.0</text>
+  <line x1="100" y1="825" x2="400" y2="825" stroke="#cccccc" stroke-width="2"/>
+  <circle cx="250" cy="825" r="8" fill="#3498db"/>
+  
+  <!-- Age Rating -->
+  <text x="500" y="805" font-family="Arial" font-size="16" fill="#333333" font-weight="bold">Age Rating</text>
+  <rect x="500" y="820" width="60" height="30" rx="5" fill="#3498db"/>
+  <text x="530" y="840" font-family="Arial" font-size="14" fill="white" text-anchor="middle">PG</text>
+  
+  <rect x="570" y="820" width="70" height="30" rx="5" fill="#ecf0f1"/>
+  <text x="605" y="840" font-family="Arial" font-size="14" fill="#333333" text-anchor="middle">PG-13</text>
+  
+  <rect x="650" y="820" width="60" height="30" rx="5" fill="#ecf0f1"/>
+  <text x="680" y="840" font-family="Arial" font-size="14" fill="#333333" text-anchor="middle">R</text>
+  
+  <rect x="720" y="820" width="80" height="30" rx="5" fill="#ecf0f1"/>
+  <text x="760" y="840" font-family="Arial" font-size="14" fill="#333333" text-anchor="middle">TV-MA</text>
+  
+  <!-- Apply Filters Button -->
+  <rect x="700" y="855" width="200" height="40" rx="5" fill="#e74c3c"/>
+  <text x="800" y="880" font-family="Arial" font-size="16" fill="white" text-anchor="middle">Apply Filters</text>
+  
+  <!-- Results Grid - 3x3 -->
+  <g>
+    <!-- Row 1 -->
+    <rect x="100" y="880" width="250" height="250" rx="5" fill="white" stroke="#dddddd" stroke-width="2"/>
+    <rect x="110" y="890" width="230" height="130" rx="5" fill="#eeeeee"/>
+    <text x="225" y="955" font-family="Arial" font-size="14" fill="#999999" text-anchor="middle">Show Poster</text>
+    <text x="225" y="1040" font-family="Arial" font-size="16" fill="#333333" text-anchor="middle" font-weight="bold">Show Title 1</text>
+    <text x="225" y="1065" font-family="Arial" font-size="14" fill="#666666" text-anchor="middle">MOVIE • 2022 • IMDB: 8.5</text>
+    <text x="225" y="1085" font-family="Arial" font-size="14" fill="#3498db" text-anchor="middle">Netflix • 95% Match</text>
+    <rect x="130" y="1100" width="190" height="30" rx="15" fill="#e74c3c"/>
+    <text x="225" y="1120" font-family="Arial" font-size="14" fill="white" text-anchor="middle">Add to Watchlist</text>
+    
+    <rect x="375" y="880" width="250" height="250" rx="5" fill="white" stroke="#dddddd" stroke-width="2"/>
+    <rect x="385" y="890" width="230" height="130" rx="5" fill="#eeeeee"/>
+    <text x="500" y="955" font-family="Arial" font-size="14" fill="#999999" text-anchor="middle">Show Poster</text>
+    <text x="500" y="1040" font-family="Arial" font-size="16" fill="#333333" text-anchor="middle" font-weight="bold">Show Title 2</text>
+    <text x="500" y="1065" font-family="Arial" font-size="14" fill="#666666" text-anchor="middle">SHOW • 2023 • IMDB: 8.2</text>
+    <text x="500" y="1085" font-family="Arial" font-size="14" fill="#3498db" text-anchor="middle">Prime • 90% Match</text>
+    <rect x="405" y="1100" width="190" height="30" rx="15" fill="#e74c3c"/>
+    <text x="500" y="1120" font-family="Arial" font-size="14" fill="white" text-anchor="middle">Add to Watchlist</text>
+    
+    <rect x="650" y="880" width="250" height="250" rx="5" fill="white" stroke="#dddddd" stroke-width="2"/>
+    <rect x="660" y="890" width="230" height="130" rx="5" fill="#eeeeee"/>
+    <text x="775" y="955" font-family="Arial" font-size="14" fill="#999999" text-anchor="middle">Show Poster</text>
+    <text x="775" y="1040" font-family="Arial" font-size="16" fill="#333333" text-anchor="middle" font-weight="bold">Show Title 3</text>
+    <text x="775" y="1065" font-family="Arial" font-size="14" fill="#666666" text-anchor="middle">MOVIE • 2021 • IMDB: 7.9</text>
+    <text x="775" y="1085" font-family="Arial" font-size="14" fill="#3498db" text-anchor="middle">Netflix • 85% Match</text>
+    <rect x="680" y="1100" width="190" height="30" rx="15" fill="#e74c3c"/>
+    <text x="775" y="1120" font-family="Arial" font-size="14" fill="white" text-anchor="middle">Add to Watchlist</text>
+  </g>
+  
+  <!-- Footer -->
+  <rect x="0" y="1140" width="1000" height="60" fill="#333333"/>
+  <text x="500" y="1175" font-family="Arial" font-size="14" fill="white" text-anchor="middle">© 2025 Hidden Gems Recommender | Data from Netflix, Amazon Prime, and Apple TV+</text>
+</svg>
