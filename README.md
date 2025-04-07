@@ -1,6 +1,7 @@
 # TV Shows and Movies Recommender Project
 
 **Inspiration**: As a developer myself, I have been binge watching tv shows and movies. One day, I began to struggle finding something NEW to watch. I realized people around me may be on the same boat. That’s why I invented this recommender system to target the “hidden-gem shows” on mainstream platforms
+
 **Product**: A content-based filtering engine that generates a list of show recommendations based on user inputs like a past show they watched, ages, genres, and production countries
 
 ## Frontend Programs
@@ -38,12 +39,14 @@ ML Model used: [K-Nearest-Neighbors](https://www.datacamp.com/tutorial/k-nearest
 6. Recommendation Generation:
 
 - **For a given title**: retrieves the most similar ones from the dataset.
-- **For user preferences**: builds a preference vector, compares it to dataset, and recommends the closest matches.
-- applies **filtering** such as min_year, genre, min_imdb to narrow results
+- Applies **filtering** such as min_year, genre, min_imdb to narrow results
 
 ## Next Steps
 
 1. Consider using a movie/tv show API so we can apply this recommender system to every movie, instead of a limited dataset
+
+- Add functionality to the recommender: make predictions on unseen data (not limited to existing dataset)
+
 2. Evaluate the model using [MAP@K](https://www.evidentlyai.com/ranking-metrics/mean-average-precision-map#mean-average-precision-map) algorithm
 
 - Ensures users will use the high-rated products first
