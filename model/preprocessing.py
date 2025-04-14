@@ -5,9 +5,9 @@ import joblib
 class Preprocessing:
 
     def __init__(self):
-        self.amazon_titles = pd.read_csv("../dataset/amazonPrime/titles.csv")
-        self.appletv_titles = pd.read_csv("../dataset/appletv/titles.csv")
-        self.netflix_titles = pd.read_csv("../dataset/netflix/titles.csv")
+        self.amazon_titles = pd.read_csv("./dataset/amazonPrime/titles.csv")
+        self.appletv_titles = pd.read_csv("./dataset/appletv/titles.csv")
+        self.netflix_titles = pd.read_csv("./dataset/netflix/titles.csv")
     
     # Preprocess data and save it in .joblib
     def preprocess_data(self):
