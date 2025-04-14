@@ -17,3 +17,17 @@ export type GetFeaturesParams = {
     content: Content[];
     transformedContent: TransformedContentVector[];
 }
+
+export type PostInferenceBody = {
+    title?: string;
+    titleId?: number;
+    filters?: {
+        genres?: string[];
+        production_countries?: string[];
+        release_year?: number;
+    }[]
+}
+
+export type PostInferenceResponse = {
+    data?: Content[];
+}
