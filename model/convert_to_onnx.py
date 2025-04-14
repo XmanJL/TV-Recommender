@@ -9,5 +9,5 @@ if __name__ == "__main__":
     initial_type = [("float_input", FloatTensorType([None, knn.n_features_in_]))]
     onnx_model = to_onnx(knn, initial_types=initial_type)
 
-    with open("model/knn_model.onnx", "wb") as f:
+    with open("model/model.onnx", "wb") as f:
         f.write(onnx_model.SerializeToString())
