@@ -36,4 +36,4 @@ def convert_joblib_to_json(joblib_filepath, json_filepath):
 
 if __name__ == "__main__":
     convert_joblib_to_json('titles.joblib', 'model/titles.json')
-    convert_joblib_to_json('titles_.joblib', 'model/titles_2.json')
+    convert_joblib_to_json('titles_transformed.joblib', 'model/titles_transformed.json')
