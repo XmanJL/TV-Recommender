@@ -1,8 +1,9 @@
 "use client";
 
 import { Content, PostInferenceBody } from "@/lib/types";
-import { Autocomplete, Box, Button, ButtonGroup, Container, Slider, Stack, TextField } from "@mui/material";
+import { Autocomplete, Box, Button, ButtonGroup, Container, Divider, Slider, Stack, TextField } from "@mui/material";
 import { useCallback, useMemo, useReducer, useState } from "react";
+import { MovieCard } from "./movie-card";
 
 type FormProps = {
     content: Content[]
@@ -24,6 +25,8 @@ export const Form = ({ content }: FormProps) => {
 
     const maxImdbScore = useMemo(() => Math.max(...content.map((item) => item.imdb_score)), [content]);
     const [imdbScore, setImdbScore] = useState(0);
+
+    const [results, setResults] = useState<Content[]>([]);
 
     const [typeFilter, dispatchTypeFilter] = useReducer((state, action) => {
         if (action.toggle === "movies" && state.shows) {
@@ -116,8 +119,12 @@ export const Form = ({ content }: FormProps) => {
             },
             body: JSON.stringify(data)
         });
-        const json = await res.json();
-        console.log(json);
+        const json: Content[] = (await res.json()).data;
+        if (res.status !== 200) {
+            alert("Error: " + json);
+            return;
+        }
+        setResults(json);
     }
 
     return <Container className="bg-slate-100">
@@ -179,5 +186,12 @@ export const Form = ({ content }: FormProps) => {
                 </Box>
             </Stack>
         </Stack>
+        {results.length > 0 &&
+            <Stack spacing={2}>
+                <Divider className="my-5" />
+                <h2 className="font-semibold">Results</h2>
+                {results.map((result, idx) => <MovieCard key={idx} {...result} />)}
+            </Stack>
+        }
     </Container>
 }
