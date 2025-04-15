@@ -1,0 +1,12 @@
+POST http://localhost:3000/api/model/inference
+Content-Type: application/json
+
+{
+    "title": "Stranger Things",
+    "filters": {
+        "genres": ["crime", "thriller"],
+        "minYear": 2015,
+        "minImdb": 7.0,
+        "type": "SHOW"
+    }
+}
