@@ -8,6 +8,31 @@ const modelPath = path.join(process.cwd(), "./model/", "model.onnx");
 const titleJsonPath = path.join(process.cwd(), "./model/", "titles.json");
 const transformedTitleJsonPath = path.join(process.cwd(), "./model/", "titles_transformed.json");
 
+/**
+ * Handles POST requests for content recommendation inference.
+ * 
+ * This endpoint processes a request containing a title and optional filters to generate
+ * content recommendations using a machine learning model.
+ * 
+ * @param req - The incoming HTTP request object containing:
+ *   - title: string - The title to base recommendations on
+ *   - titleId: string - The ID of the title
+ *   - filters: {
+ *       genres?: string[] - Optional list of genres to filter by
+ *       production_countries?: string[] - Optional list of production countries to filter by
+ *       min_release_year?: number - Optional minimum release year filter
+ *       max_release_year?: number - Optional maximum release year filter
+ *       min_imdb_score?: number - Optional minimum IMDB score filter
+ *     }
+ * 
+ * @returns A Response object containing:
+ *   - data: Content[] - An array of recommended content items filtered based on the provided criteria
+ * 
+ * @throws Will throw an error if:
+ *   - The request body cannot be parsed
+ *   - The model files cannot be loaded
+ *   - The inference session fails
+ */
 export async function POST(req: Request) {
     const res: PostInferenceBody = await req.json();
     const titles: Content[] = JSON.parse((await fs.readFile(titleJsonPath, "utf-8")));
