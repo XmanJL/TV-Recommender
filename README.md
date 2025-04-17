@@ -4,12 +4,6 @@
 
 **Product**: A content-based filtering engine that generates a list of show recommendations based on user inputs like a past show they watched, ages, genres, and production countries
 
-## Frontend Programs
-
-### Website wireframe (main dashboard)
-
-<img src="website-wireframe.svg" alt="website wireframe"/>
-
 ## Backend Programs
 
 ### preprocessing.py
@@ -41,6 +35,16 @@ ML Model used: [K-Nearest-Neighbors](https://www.datacamp.com/tutorial/k-nearest
 - **For a given title**: retrieves the most similar ones from the dataset.
 - Applies **filtering** such as min_year, genre, min_imdb to narrow results
 
+## Frontend Programs
+
+### Website Prototype (main dashboard)
+
+<img src="website-wireframe.svg" alt="website wireframe"/>
+
+1. Model Persistance: Save the backend model and data as .onnx and .json files
+2. Link to backend: Serve the .onnx file into Next.js. Render the recommended tv-shows/movies back to our website as cards.
+3. Have deployed this into Netlify. Check out our website [here!]
+
 ## Next Steps
 
 1. Consider using a movie/tv show API so we can apply this recommender system to every movie, instead of a limited dataset
@@ -51,4 +55,4 @@ ML Model used: [K-Nearest-Neighbors](https://www.datacamp.com/tutorial/k-nearest
 
 - Ensures users will use the high-rated products first
 
-3. Deploy product into a website
+3. Add movie poster as the background image for each movie card (using a poster api)
