@@ -1,5 +1,6 @@
 pandas
 scikit-learn
 joblib
+onnx --only-binary :all:
 skl2onnx 
 onnxruntime
